@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <h2 style="text-align:center"><i>{{ title }}</i></h2>
+      <div class="col" *ngIf="!(authService.user | async)">
+    
+    
+      </div>
+
+   
+    </div>
+    
+    <div class="error" *ngIf="authService.err">
+      <h5 class="text-danger">{{ authService.err }}</h5>
+      <button (click)="salir()" class="btn btn-success btn-md">
+        Volver atras
+      </button>
+    </div>
+  </div>
+
+</body>
+
+</html>
