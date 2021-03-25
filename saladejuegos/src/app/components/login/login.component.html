@@ -24,13 +24,14 @@
         <div >
             <input type="password" [(ngModel)]="password" placeholder="Ingrese contraseña . . . ." required>
         </div>
-
-        <button (click)="login()" [disabled]="!emailAddress || !password" class="btn btn-success btn-md">
+        <div >
+          <button (click)="login()" [disabled]="!emailAddress || !password" class="btn btn-success btn-md">
           Login
-        </button>
-        <button (click)="autocompletar()"  class="btn btn-success btn-md">
+          </button>
+          <button (click)="autocompletar()"  class="btn btn-success btn-md">
             Tester
           </button>
+        </div>
         <div class="form-group mt-3">
             <p>
            Crear una cuenta ? <a [routerLink]="['/registro']"> Registro </a>
