@@ -13,20 +13,24 @@
 
       <div class="success" *ngIf="authService.user | async">
         <h3>Bienvenido/a <i>{{ (authService.user | async)?.email }}</i></h3>
-        <button (click)="logout()" class="btn btn-success btn-md pull-right">
-          Logout
-        </button>
+       
         
-<div id="main">
 
-  <nav>
-    <a>Juegos</a>
-    <a>Puntuaciones</a>
-    <a [routerLink]="['/quiensoy']" >Quien Soy?</a>
- </nav>
+<ul class="nav nav-tabs bg-light">        
 
-</div>
-    
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/juegos">Menú de Juegos</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/quiensoy"><span class="glyphicon glyphicon-user"></span> Quien soy</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span> Salir</a>            
+  
+  </li>      
+</ul>
+  
   </div>
     </div>
     

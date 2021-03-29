@@ -15,7 +15,8 @@ import { AuthserviceService } from '../app/services/authservice.service';
 import { ErrorComponent } from './components/error/error.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { JuegosComponent } from './components/juegos/juegos.component'; 
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     HomeComponent,
     QuiensoyComponent,
     ErrorComponent,
-    RegistroComponent
+    RegistroComponent,
+    JuegosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+ 
+
+      <div class="success" *ngIf="authService.user | async">
+        <h3>Bienvenido/a <i>{{ (authService.user | async)?.email }}</i></h3>
+       
+        
+
+<ul class="nav nav-tabs bg-light">        
+    
+    <li class="nav-item">
+      <a class="nav-link" >Memotest</a>            
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">Piedra, papel o tijera</a>            
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" >Tateti</a>            
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" >Tetris</a>            
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="/home"><span class="glyphicon glyphicon-log-out"></span>Volver atras</a>            
+      </li>
+      
+</ul>
+
+</div>
+</div>
+
+</div>
+</body>
+
+</html>
