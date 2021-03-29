@@ -7,7 +7,7 @@ import { AuthserviceService } from '../../services/authservice.service';
   styleUrls: ['./error.component.css']
 })
 export class ErrorComponent  {
-  title = '"Error "';
+  title = '"Error en Logueo "';
 
 
   emailAddress: string;
