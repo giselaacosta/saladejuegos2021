@@ -1,7 +1,42 @@
-.container {
-    background-color: rgb(9, 96, 107);
-    margin: 4rem;
-    padding: 4rem;
+
+
+  body{
+    height: 1200px;
+    width: 100%;
     text-align: center;
-    
+    background-image: url('../../../assets/imagenes/fondo.jpg');
+    background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position: center; 
+
+  }
+
+  .btn-success{
+    background-color: #12091d !important;
+}
+
+  .toolBar{
+    color: rgb(20, 47, 70);
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #2df8ff 0px 0px 20px, #FF2D95 0px 0px 30px, #078675 0px 0px 40px, #2d3bff 0px 0px 50px, #2d42ff 0px 0px 75px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+    font-style: normal;
+    text-align: center;
+    font-size: 200vh;
+  }
+  h3{
+    color: white;
+    text-align: center;
+    font-size: 10vh;
+
+  }
+  p,a{
+    color: white;
+    text-align: center;
+  }
+  label{
+    color: white;
+    text-align: center;
   }

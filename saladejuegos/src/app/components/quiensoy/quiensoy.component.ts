@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthserviceService } from '../../services/authservice.service';
 
 @Component({
   selector: 'app-quiensoy',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuiensoyComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public authService: AuthserviceService) { }
   ngOnInit(): void {
   }
-
+  atras() {
+     this.authService.atras();
+   }
 }

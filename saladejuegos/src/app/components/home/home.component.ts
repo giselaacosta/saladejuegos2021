@@ -8,7 +8,7 @@ import { AuthserviceService } from '../../services/authservice.service';
 })
 export class HomeComponent {
 
-  title = '"Pagina Principal "';
+  title = 'HOME';
 
   emailAddress: string;
   password: string;

@@ -58,6 +58,10 @@ export class AuthserviceService {
     this.router.navigate(['login'])     
 
   }
+  atras() {
+    this.router.navigate(['home'])     
+
+  }
 
 
   // To logout an authenticated user.

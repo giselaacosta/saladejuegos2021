@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -14,6 +14,9 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthserviceService } from '../app/services/authservice.service';
 import { ErrorComponent } from './components/error/error.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { RegistroComponent } from './components/registro/registro.component';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    routing 
+    routing ,
+    MatButtonModule,
+    MatToolbarModule
+    
   ],
   providers: [AuthserviceService],
   bootstrap: [AppComponent]

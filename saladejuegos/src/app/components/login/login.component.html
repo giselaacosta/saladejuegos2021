@@ -1,19 +1,22 @@
 <html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
 
 <body>
-
+ 
   <div class="container">
+    <div style="margin-top: 70px;">
+      <mat-toolbar class="toolBar">
+        <h3>SALA DE JUEGOS</h3>
+      </mat-toolbar>
+    </div>
     <div class="row">
-      <h2 style="text-align:center"><i>{{ title }}</i></h2>
       <div class="col" *ngIf="!(authService.user | async)">
       
         <div >
-            <label for="email">Email       </label>
+            <label for="email">Email </label>
         </div>
             <div >
             <input type="text" [(ngModel)]="emailAddress" placeholder="Ingrese correo . . . ." required>
@@ -22,7 +25,7 @@
             <label for="email">Contraseña</label>
         </div>
         <div >
-            <input type="password" [(ngModel)]="password" placeholder="Ingrese contraseña . . . ." required>
+            <input type="password" [(ngModel)]="password" placeholder="Ingrese contraseña . . . ."autocomplete="on" required>
         </div>
         <div >
           <button (click)="login()" [disabled]="!emailAddress || !password" class="btn btn-success btn-md">

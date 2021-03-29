@@ -1,0 +1,46 @@
+body{
+    height: 1200px;
+    width: 100%;
+    text-align: center;
+    background-image: url('../../../assets/imagenes/quiensoy.jpg');
+    background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position: center; 
+
+  }
+  h4{
+    color: white;
+    text-align: right;
+    font-size: 3vh;
+
+  }
+  .btn-success{
+    background-color: #12091d !important;
+}
+  h2{
+    color: rgb(241, 236, 236);
+    text-align: center;
+    font-size: 5vh;
+
+  }
+  p,h3{
+    color: black;
+    text-align: center;
+    font-size: 3vh;
+    background-color:blanchedalmond !important;
+  }
+
+  *{
+    margin:0;
+    padding:0;
+   }
+   
+   .que{
+    background-color:white;
+}
+   
+
+img{
+    position: left;
+}
