@@ -1,0 +1,34 @@
+<body>
+    <div class="row">
+   
+  
+        <div class="success" *ngIf="authService.user | async">
+          <h4>Bienvenido/a <i>{{ (authService.user | async)?.email }}</i></h4>
+          <button (click)="atras()" class="btn btn-success btn-md pull-right">
+            Volver atras
+          </button>
+ 
+    </div>
+      </div>
+<div class="title">
+    <h1>¡¡Piedra, Papel o Tijera!!</h1>
+  </div>
+  <div class="score-board">
+    <div id="user-label" class="badge">user</div>
+    <div id="comp-label" class="badge">comp</div>
+    <span id="user-score">{{ pointsUser }}</span>:<span id="comp-score">{{ pointsComp }}</span>
+</div>
+<p class="info-game">{{result}}</p>
+  <div class="choices">
+       <div class="choice"  (click)="play('r')"> 
+        <img src="../../../assets/imagenes/piedra.jpg" />
+      </div>
+      <div class="choice" (click)="play('p')"> 
+        <img src="../../../assets/imagenes/papel.jpg" />
+      </div>
+      <div class="choice" (click)="play('s')"> 
+        <img src="../../../assets/imagenes/tijera.jpg" />
+      </div> 
+  </div>
+  <p class="info-game">Selecciona tu jugada</p>
+</body>

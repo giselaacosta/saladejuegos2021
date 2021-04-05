@@ -16,7 +16,11 @@ import { ErrorComponent } from './components/error/error.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { JuegosComponent } from './components/juegos/juegos.component'; 
+import { JuegosComponent } from './components/juegos/juegos.component';
+import { MemotestComponent } from './components/memotest/memotest.component';
+import { PiedrapapeltijeraComponent } from './components/piedrapapeltijera/piedrapapeltijera.component';
+import { TatetiComponent } from './components/tateti/tateti.component';
+import { TetrisComponent } from './components/tetris/tetris.component';
 
 
 @NgModule({
@@ -27,7 +31,12 @@ import { JuegosComponent } from './components/juegos/juegos.component';
     QuiensoyComponent,
     ErrorComponent,
     RegistroComponent,
-    JuegosComponent
+    JuegosComponent,
+    MemotestComponent,
+    PiedrapapeltijeraComponent,
+ 
+    TatetiComponent,
+    TetrisComponent
   ],
   imports: [
     BrowserModule,
